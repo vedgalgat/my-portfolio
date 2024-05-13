@@ -1,0 +1,538 @@
+   @media(max-width:600px) {
+
+       html,
+       body {
+           max-width: 100%;
+           overflow-x: hidden;
+           min-height: 100%;
+       }
+   }
+
+   @media screen and (max-width:600px) {
+       .logo {
+           padding: 2vw 3vw;
+           animation: slideright 1s;
+       }
+
+       .logo img {
+           width: 50vw;
+           height: 11vw;
+           animation: slideright 1s;
+       }
+
+       @keyframes slideright {
+           0% {
+               transform: translateX(100px);
+               opacity: 0;
+           }
+
+           100% {
+               transform: translateX(0);
+               opacity: 1;
+           }
+       }
+
+       .page1 {
+           background-color: rgba(0, 0, 0, 0.314);
+           height: 17vw;
+           width: 100vw;
+
+
+       }
+
+
+       .btn {
+           position: relative;
+           bottom: 6vw;
+       }
+   }
+
+
+   @media(max-width:600px) {
+       #hero .left {
+           padding-top: 18vw;
+           line-height: 13vw;
+           display: block;
+           /* left: 12vw; */
+           margin-left: auto;
+           position: relative;
+           height: 98vw;
+       }
+
+       #hero {
+           padding: 2vw 0vw;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+       }
+
+       #hero .left h2 {
+           color: white;
+           font-size: 2.5rem;
+       }
+
+       #hero .left h1 {
+           color: white;
+           font-size: 3rem;
+       }
+
+       #hero .left h3 {
+           font-size: 2.2rem;
+       }
+
+       #hero .left #element {
+           display: none;
+       }
+
+       #hero .left #note {
+           display: block;
+           position: relative;
+           /* top: 5vw; */
+       }
+
+       button {
+           padding: 2vw 2vw;
+           top: 7vw;
+       }
+
+       .btn button {
+           padding: 2vw 2vw;
+       }
+
+
+   }
+
+
+   /* ---------------------------> Image <----------------------------- */
+
+   @media screen and (max-width:600px) {
+
+       #hero .right {
+           position: relative;
+           order: -1;
+           top: 10vw;
+       }
+
+       .laptop {
+           height: 50vw;
+           height: 50vw;
+           opacity: 1;
+           order: 1;
+           display: none;
+       }
+
+       .myimage {
+           display: block;
+       }
+       #hero .right img{
+        height: 20vw;
+        width: 20vw;
+        box-shadow: 0 0 15px cyan;
+       }
+
+       #hero .right img:hover{
+        box-shadow: none;
+       }
+    }
+
+
+
+
+   
+
+
+
+
+   /* -----------------> About section <------------------- */
+
+   @media (max-width:600px) {
+
+       html,
+       body {
+           max-width: 100%;
+           overflow-x: hidden;
+           min-height: 100%;
+       }
+
+       h1 {
+           position: relative;
+           bottom: 10vw;
+           font-size: 3.5rem;
+           color: rgb(168, 159, 159);
+       }
+
+       h2 {
+           position: relative;
+           bottom: 8vw;
+       }
+
+       .section2 {
+           display: flex;
+           flex-direction: column;
+       }
+
+       .section2 .right {
+           padding: 3vw 1vw;
+
+       }
+
+       .section2 .right p {
+           color: rgb(222, 230, 234);
+           font-size: 1.2rem;
+           text-align: center;
+           max-width: 100%;
+           max-width: 100%;
+           line-height: 8vw;
+           word-spacing: 4px;
+           top: 2vw;
+       }
+
+       .section2 .left {
+           padding: 0vw 22vw;
+           bottom: 4vw;
+       }
+
+       .section2 .left img {
+           border-radius: 30px;
+           height: 60vw;
+           width: 55vw;
+           opacity: 0.75;
+           transform: none;
+       }
+
+       .section2 .left img:hover {
+           scale: 1.1;
+           box-shadow: 0 0 25px cyan, 0 0 50px cyan, 0 0 75px cyan, 0 0 100px;
+       }
+   }
+
+   /* --------------------> Service Section <--------------------- */
+
+
+   @media (max-width:600px) {
+
+       #service #show {
+           top: 4vw;
+           position: relative;
+           font-size: 3.4rem;
+           color: rgb(168, 159, 159);
+       }
+
+       .section3 {
+           display: flex;
+           flex-direction: column;
+           padding: 15vw 10vw;
+       }
+
+       .section3 .icon {
+           text-align: left;
+           font-size: 3rem;
+           position: relative;
+           bottom: 2vw;
+       }
+
+       .section3 h5 {
+           text-align: center;
+           color: chartreuse;
+           font-size: 2.2rem;
+           bottom: 3vw;
+           text-decoration: none;
+           font-weight: bold;
+       }
+
+       .section3 .first {
+           border-radius: 25px;
+           margin: 10vw 0vw;
+           padding: 2vw 11vw;
+           box-shadow: 0 0 20px cyan, 0 0 25px cyan, 0 0 30px cyan;
+           text-align: left;
+           background-color: rgba(220, 20, 60, 0.144)
+       }
+
+
+
+
+       .section3 .first p {
+           line-height: 9vw;
+           font-size: 1rem;
+           word-spacing: 8px;
+       }
+   }
+
+   /* -----------------> Conatct Section <-------------------- */
+
+   @media (max-width:600px) {
+       .contact {
+           display: flex;
+       }
+
+       .messege p {
+           display: none;
+       }
+
+       .information {
+           padding: 0vw 10vw;
+           right: 58vw;
+           position: relative;
+           display: block;
+
+       }
+
+       form {
+           color: aqua;
+           font-size: 1.6rem;
+           line-height: 11vw;
+           border: none;
+
+       }
+
+       .information form .input {
+           padding: 15px 17vw;
+           border: none;
+           border: 1px solid rgba(255, 255, 255, 0.154);
+       }
+
+
+       .information form #box {
+           display: none;
+       }
+
+       .information .ved {
+           position: absolute;
+           font-size: 1rem;
+           padding: 10px 28vw;
+           margin-top: 50vw;
+           left: 7vw;
+           top: 28vw;
+       }
+
+       .phone {
+           top: 98vw;
+           padding: 1vw 1vw;
+       }
+
+       .phone i {
+           font-size: 1.8rem;
+           cursor: pointer;
+       }
+
+       .phone span {
+           color: rgba(11, 188, 191, 0.588);
+           font-size: 1.5rem;
+       }
+
+       .social a {
+           padding: 10vw 1vw;
+       }
+
+       .mylink {
+           display: none;
+       }
+
+
+
+       .section4::before {
+           min-height: 100vw;
+           display: none;
+       }
+   }
+
+
+
+
+
+   /* ------------------> Footer Section <----------------- */
+
+   @media screen and (max-width:600px) {
+       marquee {
+           display: none;
+       }
+
+       footer h1 {
+           display: block;
+           position: relative;
+           /* bottom: 90vw; */
+           height: 9vw;
+           font-size: 15px;
+           color: rgba(249, 242, 242, 0.77);
+           font-weight: 900;
+           background-color:rgba(255, 217, 0, 0.655);
+           top: 48vw;
+           text-align: center;
+
+       }
+   }
+
+   /* ----------------> Hamburger icon <-------------------- */
+
+
+
+   @media(max-width:600px) {
+       nav .icon {
+           display: block;
+           font-size: 3rem;
+           color: rgba(255, 0, 13, 0.754);
+           font-weight: bold;
+           cursor: pointer;
+           top: 1vw;
+           animation: menu 1s;
+       }
+
+       nav ul {
+           display: none;
+       }
+
+       .show {
+           position: absolute;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           right: 0;
+           top: 15vw;
+           background-color: rgba(0, 0, 0, 0.518);
+           list-style: none;
+           width: 100vw;
+           height: 100vw;
+           z-index: 1;
+           backdrop-filter: blur(15px);
+           gap: 8vw;
+           animation: menu 0.59s;
+       }
+
+       @keyframes menu {
+           50% {
+               transform: translateY(20px);
+               opacity: 0;
+           }
+
+           100% {
+               transform: translateY(0);
+               opacity: 1;
+           }
+       }
+
+       ul li a {
+           color: rgb(11, 216, 59);
+           position: relative;
+           bottom: 16vw;
+           left: 20px;
+       }
+
+   }
+
+   /* --------------> Media Query For 375px <----------------- */
+
+   @media(max-width:375px) {
+
+       #hero .left {
+           padding: 25vw 5vw;
+           line-height: 14vw;
+       }
+
+       #hero .right {
+           position: relative;
+           bottom: 30vw;
+           right: 8vw;
+       }
+
+       #hero .right img {
+           height: 30vw;
+           width: 30vw;
+           display: none;
+       }
+
+       .btn {
+           position: relative;
+           bottom: 3vw;
+       }
+       .information form .input{
+        padding-right: 1vw;
+       }
+
+
+       .section2 .right p {
+           color: white;
+           font-size: 1.7rem;
+           line-height: 14vw;
+       }
+
+       .section3 .first p {
+           line-height: 9vw;
+           font-size: 1.7rem;
+           word-spacing: 5px;
+       }
+
+       .information .ved {
+           position: absolute;
+           font-size: 1rem;
+           padding: 3px 15vw;
+           margin-top: 59vw;
+           left: 15vw;
+           top: 27vw;
+       }
+
+
+       h1 {
+           position: relative;
+           bottom: 10vw;
+           font-size: 2.5rem;
+           color: rgb(168, 159, 159);
+       }
+
+       .section4::before {
+           /* overflow-y: auto; */
+           display: none;
+       }
+
+       .information .ved {
+           position: absolute;
+           font-size: 1rem;
+           padding: 3px 20  vw;
+           margin-top: 65w;
+           left: 15vw;
+           top: 26vw;
+       }
+
+
+       #service #show {
+           color: white;
+           font-weight: bold;
+           font-size: 3rem;
+           text-align: center;
+       }
+
+   }
+       /* media Query for 320px */
+
+       @media (max-width:320px){
+        #hero .left {
+            padding: 25vw 12vw;
+            height: 120%;
+            line-height: 17vw;
+        }
+
+        .section3 .first {
+            border-radius: 25px;
+            margin: 10vw 0vw;
+            padding: 2vw 7vw;
+
+        }
+
+        .information .ved {
+            padding: 3px 20vw;
+            margin-top: 68vw;
+         
+        }
+        .phone {
+            top: 110vw;
+
+        }
+        footer h1 {
+            top:50vw
+        }
+ 
+
+ 
+       }

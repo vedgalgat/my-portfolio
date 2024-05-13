@@ -1,0 +1,514 @@
+    html {
+        scroll-behavior: smooth;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(8, 8, 20);
+    }
+
+    .cursor_anim{
+        height: 18px;
+        width: 18px;
+        background-color: cyan;
+        box-shadow: 0 0 10px cyan, 0 0 20px cyan ,0 0 30px cyan;
+        border-radius: 50%;
+        position: fixed;
+
+    }
+    
+    .page1 {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(2, 3, 0, 0.188);
+        height: 8vw;
+        width: 100%;
+    }
+
+    .logo {
+        padding: 1vw 3vw;
+        position: relative;
+    }
+
+    .logo img {
+        border-radius: 5%;
+        width: 25vw;
+        height: 6vw;
+        animation: left 2s all;
+        transition: 1.s;
+        animation: slideright 2s ease forwards;
+    }
+
+    @keyframes slideright {
+        0% {
+            transform: translateX(-100px);
+            opacity: 0;
+
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4vw;
+        padding: 3vw 7vw;
+        position: relative;
+    }
+
+    nav ul a {
+        text-decoration: none;
+        color: #E8D68A;
+        font-size: 1.3rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        /* animation: nav 1.2s; */
+    }
+
+    @keyframes nav {
+        50% {
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+
+        70% {
+            transform: translateY(0px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1s;
+        }
+    }
+
+    nav ul a:hover {
+        padding: 7px 13px;
+        border: 1px solid aqua;
+        border-radius: 30px;
+        text-shadow: 1px 1px rgba(0, 255, 255, 0.801);
+    }
+
+    .container #hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+       /* -----------------> Design of Image <------------------ */
+
+    
+    #hero .right {
+        padding: 3vw 5vw;
+        animation: top 1.4s ease;
+    }
+
+    #hero .right img{
+        height: 20vw;
+        width: 20vw;
+        border-radius:50%;
+        box-shadow: 0 0 25px red, 0 0 35px rgb(168, 13, 23),0 0 60px red;
+        filter: opacity(0.90);
+        overflow: hidden;
+    }
+    .myimage{
+
+        display: none;
+    }
+
+    @keyframes top {
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    #hero .right img:hover {
+        box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 25px cyan, 0 0 50px, 0 0 100px cyan;
+    }
+
+       /* -----------------> Design name and other text <------------------ */
+
+    #hero .left {
+        padding: 10vw 12vw;
+    }
+
+    #hero .left h4 {
+        color: white;
+        font-size: 3rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        animation: main .80s ease forwards;
+    }
+
+    @keyframes main {
+        50% {
+            transform: translateX(-100px);
+            opacity: 0.1;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    #hero .left h6 {
+        color: white;
+        font-size: 2.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #hero .left #element {
+        color: #E8D68A;
+        font-size: 3rem;
+        display: inline;
+        font-family: fantasy;
+    }
+
+    #hero .left #note {
+        color: green;
+        position: relative;
+        bottom: 10vw;
+        font-size: 3rem;
+        display: inline;
+        font-family: fantasy;
+        display: none;
+    }
+
+    .btn button {
+        padding: 1vw 2vw;
+        display: inline;
+        position: relative;
+        top: 3vw;
+        border-radius: 20px;
+        background-color: cyan;
+        font-size: 1.5rem;
+        color: rgb(221, 12, 12);
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+        box-shadow: 0 0 10px cyan, 0 0 20px cyan;
+        animation: bottom 1s ease forwards;
+    }
+
+    @keyframes bottom {
+        50% {
+            transform: translateY(100px);
+            opacity: .10;
+        }
+
+        80% {
+            transform: translateX(-100px);
+            opacity: 0.30;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+    }
+
+    .btn a {
+        text-decoration: none;
+    }
+
+    button:hover {
+        box-shadow: 0 0 25px cyan, 0 0 50px cyan;
+    }
+
+   /* -----------------> This is About Section <------------------ */
+
+    h1 {
+        text-align: center;
+        font-size: 5rem;
+        color: white;
+        margin-top: 3vw;
+    }
+
+    h2 {
+        color: #E8D68A;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .section2 {
+        display: flex;
+        justify-content: space-between;
+        padding: 5vw 2vw;
+    }
+
+    .section2 .right {
+        padding: 0vw 2vw;
+    }
+
+    .section2 .right p {
+        color: white;
+        font-size: 1.7rem;
+        text-align: center;
+        max-width: 50vw;
+        line-height: 2.4vw;
+        word-spacing: 4px;
+        font-family: serif;
+    }
+
+    .section2 .left {
+        padding: 0 6vw;
+        position: relative;
+        bottom: 1vw;
+    }
+
+    .section2 .left img {
+        border-radius: 20px;
+        height: 32vw;
+        width: 28vw;
+        opacity: 0.75;
+        transform: skewx(5deg);
+    }
+
+    .section2 .left img:hover {
+        scale: 1.1;
+        transform: none;
+        transform: translatey(-1px);
+        box-shadow: 0 0 25px cyan, 0 0 50px cyan, 0 0 75px cyan, 0 0 100px;
+    }
+
+    /* -----------------> This is services Section <------------------ */
+
+
+    #service #show {
+        color: white;
+        font-weight: bold;
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    .section3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5vw 6vw;
+    }
+    .section3 .icon {
+        text-align: left;
+        color: cyan;
+        font-size: 4rem;
+        position: relative;
+        bottom: 2vw;
+    }
+
+    .section3 h5 {
+        text-align: center;
+        color: #fbcf0e;
+        font-size: 2rem;
+        position: relative;
+        bottom: 2vw;
+        text-decoration: underline;
+    }
+
+    .section3 .first {
+        border: 2px solid #6b580355;
+        border-radius: 25px;
+        margin: 1vw 3vw;
+        padding: 7vw 6vw;
+        box-shadow: 0 0 20px cyan, 0 0 25px cyan;
+        text-align: center;
+        transition: 0.90s all;
+    }
+
+    .section3 .first:hover {
+        transform: translateY(-2vw);
+        background-color: rgb(143, 4, 74);
+    }
+
+    .section3 .first p {
+        color: white;
+        line-height: 3vw;
+        font-size: 1.7rem;
+        word-spacing: 5px;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 500;
+    }
+
+      /* -----------------> This is Comtact Section <------------------ */
+
+    .section4::before {
+        content: "";
+        background: url('Images/julian-hochgesang-Dkn8-zPIbwo-unsplash.jpg')no-repeat center center/cover;
+        height: 51vw;
+        width: 100%;
+        position: absolute;
+        opacity: 0.15;
+        z-index: -1;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        padding: 4vw 4vw;
+    }
+
+    .messege p {
+        color: white;
+        font-size: 1.6rem;
+        line-height: 4vw;
+        padding: 5vw 0vw;
+    }
+
+    .messege {
+        width: 50vw;
+    }
+
+    .information {
+        padding: 1vw 2vw;
+        width: 50vw;
+    }
+
+    form {
+        color: aqua;
+        font-size: 1.6rem;
+        line-height: 5vw;
+        position: relative;
+    }
+
+    .information form .input {
+        padding: 12px 8vw;
+        background: transparent;
+        background-color: rgba(0, 0, 0, 0.341);
+        border: none;
+        border-radius: 15px;
+        color: white;
+        margin-left: 2vw;
+        font-size: 1.1rem;
+    }
+
+    .information form .input::placeholder {
+        color: rgb(226, 220, 220);
+        font-size: 1rem;
+    }
+
+    .information form #box::placeholder {
+        color: rgb(246, 231, 231);
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .information form #box {
+        resize: none;
+        background: transparent;
+        background-color: rgba(0, 0, 0, 0.404);
+        border-radius: 15px;
+        border: none;
+        margin-left: 3vw;
+        margin-top: 1vw;
+        position: absolute;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .information .ved {
+        color: red;
+        background-color: cyan;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 7px 18vw;
+        border: none;
+        border-radius: 15px;
+        position: relative;
+        top: 20vw;
+        box-shadow: 0 0 5px #00ffff, 0 0 10px cyan, 0 0 30px cyan;
+    }
+
+    .information .ved:hover {
+        box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 25px rgba(0, 255, 255, 0.74), 0 0 75px cyan;
+    }
+
+    .phone {
+        display: flex;
+        gap: 3vw;
+        position: relative;
+        bottom: 10vw;
+        right: 2vw;
+        padding: 7px 0vw;
+    }
+
+    .phone i {
+        color: cyan;
+        font-size: 2.5rem;
+        animation: icon 0.70s infinite;
+    }
+
+    .phone span {
+        color: rgba(255, 255, 0, 0.683);
+        font-size: 1.8rem;
+    }
+
+    @keyframes icon {
+
+        50% {
+            transform: rotateX(45deg);
+
+        }
+    }
+
+     /* ----------------->  social media icons styling <------------------ */
+
+    .social a {
+        text-decoration: none;
+        color: cyan;
+        padding: 0vw 1vw;
+        font-size: 1.3rem;
+    }
+
+    .social a i {
+        border-radius: 50%;
+        border: 2px solid cyan;
+        padding: 6px 6px;
+    }
+
+    .social a i:hover {
+        box-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 40px cyan, 0 0 60px cyan, 0 0 100px cyan, 0 0 150px cyan;
+    }
+
+    marquee {
+        position: relative;
+        font-size: 1.5rem;
+        color: chartreuse;
+        background-color: rgba(3, 46, 72, 0.66);
+        height: 3vw;
+        width: 100%;
+        letter-spacing: 3px;
+        top: 4vw
+    }
+
+    footer h1 {
+        font-size: 1.5rem;
+        color: #fbcf0e;
+        background-color: rgba(16, 17, 49, 0.66);
+        height: 3vw;
+        width: 100%;
+        letter-spacing: 3px;
+        display: none;
+    }
+
+    nav .icon {
+        font-size: 3rem;
+        color: white;
+        position: relative;
+        text-align: right;
+        bottom: 6vw;
+       display: none;
+    }
